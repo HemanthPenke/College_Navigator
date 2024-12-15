@@ -30,7 +30,20 @@
            color: white;
            text-align: center;
        }
-     
+       ::-webkit-scrollbar {
+           width: 60px;
+       }
+       ::-webkit-scrollbar-track {
+           background: #003865;
+           border-radius: 30px;
+       }
+       ::-webkit-scrollbar-thumb {
+           background: #FFCD00;
+           border-radius: 40px;
+       }
+       ::-webkit-scrollbar-thumb:hover {
+           background: #555;
+       }
        .fixTableHead thead th {
            position: sticky;
            top: 0;
@@ -92,6 +105,22 @@
             height: 100%;
             overflow: auto; 
             background-color: rgba(0, 0, 0, 0.9); 
+        }
+
+        .modal-content1 {
+            margin: auto;
+            display: block;
+        }
+        .modal-content1, #caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.5s;
+            animation-name: zoom;
+            animation-duration: 0.5s;
+        }
+
+        @-webkit-keyframes zoom {
+            from {-webkit-transform:scale(0)}
+            to {-webkit-transform:scale(1)}
         }
        
         @keyframes zoom {
@@ -226,6 +255,7 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
+            -webkit-tap-highlight-color: transparent;
             vertical-align: top;
             padding: 0;
         
@@ -318,6 +348,7 @@
             gap: 30px;
             margin: 20px;
             margin-right: 200px;
+            margin-top: 150px;
             
 
 
@@ -325,11 +356,11 @@
 
            #roomText p{
             font-size: 20px;
-            margin: 0;
+            
            }
 
            #roommText input{
-            margin: 0;
+           
 
            }
            #mapbtn{
@@ -350,6 +381,8 @@
                 align-items: center;
                 margin-left: 90px;
                 padding-right: -500px;
+                margin-top: 50px;
+
                 
                 
             }
