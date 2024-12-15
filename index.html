@@ -310,15 +310,97 @@
             font-family: Roboto-Black;
             font-size: 40px;
         }
-        @media (max-width:900px){
-            #academicMap{
+        
+
+        @media (max-width:1000px) { /* Additional media query for smaller devices */
+           table,
+           th,
+           td,
+           #roomNo,
+           #mapbtn,
+           .keyboard
+           
+            {
+               font-size: smaller !important; /* Scale down text on smaller devices */
+               width: auto !important; /* Allow elements to take full available width */
+               margin-left:auto !important;
+               margin-right:auto !important;
+           }
+           
+           .Container,
+           #roomText,
+           #img01,
+           #img02{
+               width:auto !important; /* Allow full-width on small screens */
+               padding-left:.5rem !important;
+               padding-right:.5rem !important;
+
+           }
+
+           #roomText{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin: 20px;
+            margin-right: 200px;
+            
+
+
+           }
+
+           #roomText p{
+            font-size: 20px;
+            margin: 0;
+           }
+
+           #roommText input{
+            margin: 0;
+
+           }
+           #mapbtn{
+            position: relative;
+            left: 3%;
+            justify-content: center;
+            
+           
+           }
+            .Container{
+                position: none;
+            }
+
+            .aditya{
                 display: flex;
                 flex-direction: column;
+                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
+            }
+
+            .fixTableHead{
+                position:relative;
+                top: 30%;
+                right: 7%;
+            }
+
+            .aditya h1{
+                font-size: 30px;
+                
 
             }
-        }
+
+            .aditya p{
+                font-size: 20px;
+            }
+
+            
+
+
+
+
+
+       } 
 
 
         
@@ -360,9 +442,8 @@
         </div>
     </div>     
        <div class="aditya">
-        <h1>COLLEGE CAMPUS NAVIGATOR</h1>
+        <center><h1>COLLEGE CAMPUS NAVIGATOR</h1></center>
         <p>Find Your Way Easily!</p>
-        <p></p>
        </div>
         <div id="roomText">
             <p>ENTER THE ROOM NUMBER   :</p><input type="text" autocomplete="off" class="use-keyboard-input" id="roomNo" required>
