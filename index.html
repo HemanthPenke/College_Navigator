@@ -30,20 +30,7 @@
            color: white;
            text-align: center;
        }
-       ::-webkit-scrollbar {
-           width: 60px;
-       }
-       ::-webkit-scrollbar-track {
-           background: #003865;
-           border-radius: 30px;
-       }
-       ::-webkit-scrollbar-thumb {
-           background: #FFCD00;
-           border-radius: 40px;
-       }
-       ::-webkit-scrollbar-thumb:hover {
-           background: #555;
-       }
+     
        .fixTableHead thead th {
            position: sticky;
            top: 0;
@@ -60,7 +47,8 @@
            text-align: center;
            margin-top: 0px;
            height: 0px;
-           color: white;    
+           color: white;
+            
        }
        table, th, td{
            font-family: Arial, Helvetica, sans-serif;
@@ -105,22 +93,7 @@
             overflow: auto; 
             background-color: rgba(0, 0, 0, 0.9); 
         }
-        .modal-content1 {
-            margin: auto;
-            display: block;
-        }
-        .modal-content1, #caption {
-            -webkit-animation-name: zoom;
-            -webkit-animation-duration: 0.5s;
-            animation-name: zoom;
-            animation-duration: 0.5s;
-        }
-
-        @-webkit-keyframes zoom {
-            from {-webkit-transform:scale(0)}
-            to {-webkit-transform:scale(1)}
-        }
-
+       
         @keyframes zoom {
             from {transform:scale(0)}
             to {transform:scale(1)}
@@ -175,7 +148,7 @@
        body{
         align-items: center;
         justify-content: center;
-        background: linear-gradient(lightblue,darkblue);
+        background: rgb(204, 207, 166)
        }
       
         #roomNo{
@@ -255,7 +228,7 @@
             justify-content: center;
             vertical-align: top;
             padding: 0;
-            -webkit-tap-highlight-color: transparent;
+        
             position: relative;
         }
         .keyboard__key:active {
@@ -300,13 +273,13 @@
             
         }
         .aditya h1{
-            flex-direction: column;
+            
             font-family: Roboto-Black;
             font-size: 50px;
         }
 
         .aditya p{
-            flex-direction: column;
+            
             font-family: Roboto-Black;
             font-size: 40px;
         }
@@ -373,27 +346,33 @@
             .aditya{
                 display: flex;
                 flex-direction: column;
-                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
+                margin-left: 90px;
+                padding-right: -500px;
+                
+                
             }
 
             .fixTableHead{
                 position:relative;
                 top: 30%;
                 right: 7%;
+                padding-right: px;
             }
 
-            .aditya h1{
-                font-size: 30px;
+            .aditya>h1{
+                font-size: 40px;
+                text-align: center;
+
                 
 
             }
 
-            .aditya p{
+            .aditya>p{
                 font-size: 20px;
             }
-
+           
 
 
 
@@ -442,7 +421,7 @@
         </div>
     </div>     
        <div class="aditya">
-        <center><h1>COLLEGE CAMPUS NAVIGATOR</h1></center>
+        <h1>COLLEGE CAMPUS NAVIGATOR</h1>
         <p>Find Your Way Easily!</p>
        </div>
         <div id="roomText">
